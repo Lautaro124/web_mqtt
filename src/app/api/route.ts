@@ -7,7 +7,7 @@ export async function POST (req: Request) {
 
   mqttClient.on('connect', () => {
     mqttClient.subscribe('light', () => {
-      mqttClient.publish('light', response.data);
+      mqttClient.publish('light', response.data)
     });
   });
   
