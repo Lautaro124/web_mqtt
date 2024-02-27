@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-4">
       <section className="flex flex-col items-center space-y-4">
-        <h1 className="text-3xl font-bold text-gray-300">
+        <h1 className="text-3xl font-bold text-gray-300 mb-7">
           Control de Luz
         </h1>
         <label htmlFor="check" className="bg-slate-400 w-20 h-10 rounded-full relative cursor-pointer peer-checked:bg-slate-800">

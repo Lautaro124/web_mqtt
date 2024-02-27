@@ -6,8 +6,8 @@ export async function POST (req: Request) {
   const response: {data:string} = await req.json();
 
   mqttClient.on('connect', () => {
-    mqttClient.subscribe('light', () => {
-      mqttClient.publish('light', response.data)
+    mqttClient.subscribe('/light', () => {
+      mqttClient.publish('/light', response.data)
     });
   });
   
